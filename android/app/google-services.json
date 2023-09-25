@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760131071256",
+    "project_id": "shorts-a5c63",
+    "storage_bucket": "shorts-a5c63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760131071256:android:5624c83c75ae891c6d426d",
+        "android_client_info": {
+          "package_name": "com.CodeHack.shorts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760131071256-i8rn7t2qqkls8gt2tbm8jht0la0lttem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeMa4ZzRdp7pn72L_2AUjnm1R1Nf0n5kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760131071256-i8rn7t2qqkls8gt2tbm8jht0la0lttem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
