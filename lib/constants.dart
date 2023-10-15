@@ -4,6 +4,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:shorts/controllers/auth_controller.dart';
 import 'package:shorts/views/screens/add_vidor_screen.dart';
+import 'package:shorts/views/screens/profile_screen.dart';
+import 'package:shorts/views/screens/search_screen.dart';
 import 'package:shorts/views/screens/video_screen.dart';
 
 const backgroundColor = Colors.black;
@@ -12,10 +14,10 @@ const borderColor = Colors.grey;
 // pages for BottomNavigationBar
 List pages = [
   VideoScreen(),
-  Text("search screen"),
+  SearchScreen(),
   AddVideo(),
   Text("messages screen"),
-  Text("Profile screen"),
+  ProfileScreen(uid: authController.user.uid),
 ];
 // firebase constant
 var firebaseauth = FirebaseAuth.instance;

@@ -99,7 +99,7 @@ class AuthController extends GetxController {
     }
   }
 
-  void logoutUser() {
+  void singout() {
     try {
       firebaseauth.signOut();
     } on FirebaseException catch (e) {

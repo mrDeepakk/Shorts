@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shorts/constants.dart';
 import 'package:shorts/controllers/video_controller.dart';
 import 'package:shorts/views/screens/comment_screen.dart';
+import 'package:shorts/views/screens/profile_screen.dart';
 import 'package:shorts/views/screens/video_player_item.dart';
 import 'package:shorts/views/widgets/circle_animation.dart';
 import 'package:get/get.dart';
@@ -132,7 +133,14 @@ class VideoScreen extends StatelessWidget {
                             width: 100,
                             margin: EdgeInsets.only(top: size.height / 2.6),
                             child: Column(children: [
-                              buildProfile(data.profilepic),
+                              InkWell(
+                                onTap: () => {
+                                  Get.to(ProfileScreen(
+                                    uid: data.uid,
+                                  )),
+                                },
+                                child: buildProfile(data.profilepic),
+                              ),
                               SizedBox(
                                 height: 20,
                               ),
